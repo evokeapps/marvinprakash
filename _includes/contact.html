@@ -1,16 +1,21 @@
 <div class="row">
-    {% for item in site.data.contact %}
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="p-3 text-secondary">
-            <i class="{{item.icon}}"></i>
-            <span>{{item.title}}</span>
-            {% if item.link %}
-            <div class="fs-5"><a href="{{item.link}}"
-                    class="text-white text-decoration-underline">{{item.description}}</a></div>
-            {% else %}
-            <div class="fs-5 text-white">{{item.description}}</div>
-            {% endif %}
-        </div>
+  {% for item in site.data.contact %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="p-3 text-primary">
+      <i class="{{item.icon}} me-2"></i>
+      <span>{{item.title}}</span>
+
+      <div class="fs-5 text-dark">
+        {% if item.link %}
+        <a
+          href="{{item.link}}"
+          class="text-decoration-underline text-dark ff-serif"
+          >{{item.description}}</a
+        >
+        {% else %} <span class="ff-serif">{{item.description}}</span> {% endif
+        %}
+      </div>
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 </div>

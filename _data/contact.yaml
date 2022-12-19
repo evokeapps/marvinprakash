@@ -1,33 +1,33 @@
+- title: Date of birth
+  description: 29 Jul 2000
+  icon: "fas fa-cake"
 - title: Address
   description: A-64 Pandav Nagar East Delhi, 110092 East Delhi, India
-  icon: 'fas fa-map-marker'
+  icon: "fas fa-map-marker"
 - title: Email
   description: marvin51_soe@jnu.ac.in
-  icon: 'fas fa-envelope-square'
+  icon: "fas fa-envelope-square"
   link: mailto:marvin51_soe@jnu.ac.in
 - title: Phone
   description: 9205341911
-  icon: 'fas fa-phone'
+  icon: "fas fa-phone"
   link: tel:9205341911
 - title: LinkedIn
   link: https://www.linkedin.com/in/marvin-p-688a12132/
   description: M4Marvin
-  icon: 'fab fa-linkedin-in'
-- title: Date of birth
-  description: 29 Jul 2000
-  icon: 'fas fa-cake'
-- title: Discord
-  description: DishWasher#1111
-  icon: 'fab fa-discord'
-- title: Kaggle
-  description: m4marvin
-  link: https://www.kaggle.com/m4marvin
-  icon: 'fab fa-kaggle'
-- title: Code Chef
-  description: qwerty_qwerty1
-  link: https://www.codechef.com/users/qwerty_qwerty1
-  icon: 'fas fa-closed-captioning'
-- title: Code Forces
-  description: M4Marvin
-  link: https://codeforces.com/profile/M4Marvin
-  icon: 'fas fa-code'
+  icon: "fab fa-linkedin-in"
+# - title: Discord
+#   description: DishWasher#1111
+#   icon: 'fab fa-discord'
+# - title: Kaggle
+#   description: m4marvin
+#   link: https://www.kaggle.com/m4marvin
+#   icon: 'fab fa-kaggle'
+# - title: Code Chef
+#   description: qwerty_qwerty1
+#   link: https://www.codechef.com/users/qwerty_qwerty1
+#   icon: 'fas fa-closed-captioning'
+# - title: Code Forces
+#   description: M4Marvin
+#   link: https://codeforces.com/profile/M4Marvin
+#   icon: 'fas fa-code'
