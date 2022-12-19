@@ -1,0 +1,62 @@
+---
+layout: default
+---
+{% include navbar.html %}
+<div class="bg-dark min-vh-50">
+    <div class="container py-5">
+        <div class="py-5">
+            <div class="row d-flex text-light align-items-center g-5 mb-5">
+                <div class="col-12 col-lg-4">
+                    <div class="text-center">
+                        {% assign image = site.data.biography.image | relative_url %}
+                        <div class="mb-3 p-3"><img src="{{image}}" class="img-fluid"
+                                style="aspect-ratio: auto 128/128; border-radius: 50%; max-width: 50%;"></div>
+                        <div class="fs-4">{{site.title}}</div>
+                        <div class="fs-5 text-secondary">{{site.description}}</div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h2 class="text-warning fs-1">{{site.data.biography.title}}</h2>
+                    <div class="fs-4">{{site.data.biography.description | markdownify}}</div>
+                </div>
+            </div>
+            <hr>
+            {% include contact.html %}
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row mb-5 g-5" id="education">
+        <div class="col-12 col-lg-4">
+            <h4 class="mb-3 fs-2 text-info">Education</h4>
+        </div>
+        <div class="col-12 col-lg-8">
+            {% include education.html %}
+        </div>
+    </div>
+    <div class="row mb-5 g-5" id="skills">
+        <div class="col-12 col-lg-4">
+            <h4 class="mb-3 fs-2 text-info">Skills</h4>
+        </div>
+        <div class="col-12 col-lg-8">
+            {% include skills.html %}
+        </div>
+    </div>
+    <div class="row mb-5 g-5" id="projects">
+        <div class="col-12 col-lg-4">
+            <h4 class="mb-3 fs-2 text-info">Projects</h4>
+        </div>
+        <div class="col-12 col-lg-8">
+            {% include projects.html %}
+        </div>
+    </div>
+    <div class="row mb-5 g-5" id="experience">
+        <div class="col-12 col-lg-4">
+            <h4 class="mb-3 fs-2 text-info">Experience</h4>
+        </div>
+        <div class="col-12 col-lg-8">
+            {% include experience.html %}
+        </div>
+    </div>
+</div>

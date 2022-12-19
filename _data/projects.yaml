@@ -1,0 +1,15 @@
+- title: Cloud Service with Encryption and Face Authentication
+  description: A web app made with flask built with a Spoofing proof Face Authentication Login System.
+  duration: Jul 2022 - Sep 2022
+
+- title: Hands-free voice and gesture-controlled Web Framework
+  description: Website focused on accessibility made using React, Node JS and TensorFlow.
+  duration: Jan 2022
+
+- title: Sentiment Analysis using BERT
+  description: Sentiment Analysis with BERT and Transformers by Hugging Face using PyTorch and Python
+  duration: Dec 2020
+
+- title: SwacchRasoi
+  description: An Automatic Kitchen Hygiene Detector using Computer Vision
+  duration: Oct 2020

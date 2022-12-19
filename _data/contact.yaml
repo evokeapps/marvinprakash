@@ -1,0 +1,18 @@
+- title: Address
+  description: A-64 Pandav Nagar East Delhi, 110092 East Delhi, India
+  icon: 'fas fa-map-marker'
+- title: Email
+  description: marvin51_soe@jnu.ac.in
+  icon: 'fas fa-envelope-square'
+- title: Phone
+  description: 9205341911
+  icon: 'fas fa-phone'
+- title: LinkedIn
+  description: https://www.linkedin.com/in/marvin-p-688a12132/
+  icon: 'fab fa-linkedin-in'
+- title: Date of birth
+  description: 29 Jul 2000
+  icon: 'fas fa-cake'
+- title: Discord
+  description: DishWasher#1111
+  icon: 'fab fa-discord'
