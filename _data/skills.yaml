@@ -2,7 +2,10 @@
   description: Python, R, C++, Shell Scripting, Java
 - title: Machine Learning
   description: Deep Learning, Image Processing, Natural Language Processing, Data Mining
+  icon: 'fas fa-brain'
 - title: Teaching
   description: Freelance Teaching for 3 years. (Programming and Maths)
+  icon: 'fas fa-chalkboard-teacher'
 - title: Web Development
   description: React, Flask 2.0, Django, MongoDB, JavaScript, PostgreSQL, PostMan, Bootstrap, WordPress, Flexbox
+  icon: 'far fa-file-code'
