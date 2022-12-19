@@ -1,7 +1,7 @@
 title: Marvin V Prakash
 email: mailto:marvin51_soe@jnu.ac.in
 description: Computational Biology Student (JNU SE)
-baseurl: ''
+baseurl: '/marvinprakash'
 url: ''
 plugins:
   - jekyll-seo-tag

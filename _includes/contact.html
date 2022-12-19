@@ -4,7 +4,12 @@
         <div class="p-3 text-secondary">
             <i class="{{item.icon}}"></i>
             <span>{{item.title}}</span>
+            {% if item.link %}
+            <div class="fs-5"><a href="{{item.link}}"
+                    class="text-white text-decoration-underline">{{item.description}}</a></div>
+            {% else %}
             <div class="fs-5 text-white">{{item.description}}</div>
+            {% endif %}
         </div>
     </div>
     {% endfor %}
