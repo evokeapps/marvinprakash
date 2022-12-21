@@ -1,0 +1,11 @@
+<div id="timeline-wrapper">
+  <ul class="sessions text-white">
+    {% for item in site.data.projects %}
+    <li>
+      <div class="time text-secondary">{{item.duration}}</div>
+      <div class="fs-4 fw-bold">{{item.title}}</div>
+      <div class="fs-5 text-secondary ff-serif mb-5">{{item.description}}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

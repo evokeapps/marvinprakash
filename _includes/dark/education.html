@@ -1,0 +1,12 @@
+<div id="timeline-wrapper">
+  <ul class="sessions text-white">
+    {% for item in site.data.education %}
+    <li>
+      <div class="time text-secondary">{{item.duration}}</div>
+      <div class="fw-bold fs-4">{{item.institution}}</div>
+      <div class="mb-2 text-secondary">{{item.title}}</div>
+      <div class="fs-5 ff-serif mb-5">{{item.notes}}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

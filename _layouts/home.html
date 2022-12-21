@@ -2,69 +2,145 @@
 layout: default
 ---
 
-{% include navbar.html %}
-<div class="mb-5"></div>
-<div class="container" id="hero">
-  <div class="row d-flex align-items-center g-5 py-5">
-    <div class="col-12 col-lg-4">
-      <div class="text-center">
-        {% assign image = site.data.biography.image | relative_url %}
-        <div class="mb-3">
-          <img src="{{image}}" class="img-fluid shadow" style="
-              aspect-ratio: auto 128/128;
-              border-radius: 50%;
-              max-width: 50%;
-            " />
+<div class="theme-container" x-data="{darkTheme:true}">
+  <!-- Light theme -->
+  <div class="bg-white" x-show="!darkTheme">
+    {% include navbar.html %}
+    <div class="mb-5"></div>
+    <div class="container" id="hero">
+      <div class="row d-flex align-items-center g-5 py-5">
+        <div class="col-12 col-lg-4">
+          <div class="text-center">
+            {% assign image = site.data.biography.image | relative_url %}
+            <div class="mb-3">
+              <img src="{{image}}" class="img-fluid shadow" style="
+                aspect-ratio: auto 128/128;
+                border-radius: 50%;
+                max-width: 50%;
+              " />
+            </div>
+            <div class="fs-3">{{site.title}}</div>
+            <div class="fs-6 fw-bold text-secondary">{{site.description}}</div>
+          </div>
         </div>
-        <div class="fs-3">{{site.title}}</div>
-        <div class="fs-6 fw-bold text-secondary">{{site.description}}</div>
+        <div class="col-12 col-lg-8">
+          <h2 class="text-secondary fs-2 ff-serif text-center text-lg-start">
+            {{site.data.biography.title}}
+          </h2>
+          <div class="fs-5 ff-serif text-center text-lg-start">
+            {{site.data.biography.description | markdownify}}
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-12 col-lg-8">
-      <h2 class="text-secondary fs-2 ff-serif text-center text-lg-start">
-        {{site.data.biography.title}}
-      </h2>
-      <div class="fs-5 ff-serif text-center text-lg-start">
-        {{site.data.biography.description | markdownify}}
+    <div class="bg-light">
+      <div class="container py-5">{% include contact.html %}</div>
+    </div>
+    <div class="mb-5"></div>
+    <div class="container">
+      <div class="row mb-5 g-5 pt-5" id="education">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
+            Education
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include education.html %}</div>
+      </div>
+      <div class="row mb-5 g-5 pt-5" id="skills">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
+            Skills
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include skills.html %}</div>
+      </div>
+      <div class="row mb-5 g-5 pt-5" id="projects">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
+            Projects
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include projects.html %}</div>
+      </div>
+      <div class="row g-5 py-5" id="experience">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
+            Experience
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include experience.html %}</div>
       </div>
     </div>
+    {% include footer.html %}
   </div>
-</div>
-<div class="bg-light">
-  <div class="container py-5">{% include contact.html %}</div>
-</div>
-<div class="mb-5"></div>
-<div class="container">
-  <div class="row mb-5 g-5 pt-5" id="education">
-    <div class="col-12 col-lg-4">
-      <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
-        Education
-      </h4>
+  <!-- Dark theme -->
+  <div class="bg-dark" x-show="darkTheme">
+    {% include dark/navbar.html %}
+    <div class="mb-5"></div>
+    <div class="container" id="hero">
+      <div class="row d-flex align-items-center g-5 py-5">
+        <div class="col-12 col-lg-4">
+          <div class="text-center">
+            {% assign image = site.data.biography.image | relative_url %}
+            <div class="mb-3">
+              <img src="{{image}}" class="img-fluid shadow" style="
+                aspect-ratio: auto 128/128;
+                border-radius: 50%;
+                max-width: 50%;
+              " />
+            </div>
+            <div class="fs-3 text-white">{{site.title}}</div>
+            <div class="fs-6 fw-bold text-secondary">{{site.description}}</div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <h2 class="text-secondary fs-2 ff-serif text-center text-lg-start">
+            {{site.data.biography.title}}
+          </h2>
+          <div class="fs-5 ff-serif text-center text-white text-lg-start">
+            {{site.data.biography.description | markdownify}}
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-12 col-lg-8">{% include education.html %}</div>
-  </div>
-  <div class="row mb-5 g-5 pt-5" id="skills">
-    <div class="col-12 col-lg-4">
-      <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
-        Skills
-      </h4>
+    <div class="bg-dark">
+      <div class="container py-5">{% include dark/contact.html %}</div>
     </div>
-    <div class="col-12 col-lg-8">{% include skills.html %}</div>
-  </div>
-  <div class="row mb-5 g-5 pt-5" id="projects">
-    <div class="col-12 col-lg-4">
-      <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
-        Projects
-      </h4>
+    <div class="mb-5"></div>
+    <div class="container">
+      <div class="row py-5 g-5" id="education">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-secondary fw-bold text-center text-lg-start">
+            Education
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include dark/education.html %}</div>
+      </div>
+      <div class="row g-5 py-5" id="skills">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-secondary fw-bold text-center text-lg-start">
+            Skills
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include dark/skills.html %}</div>
+      </div>
+      <div class="row g-5 py-5" id="projects">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-secondary fw-bold text-center text-lg-start">
+            Projects
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include dark/projects.html %}</div>
+      </div>
+      <div class="row py-5 g-5" id="experience">
+        <div class="col-12 col-lg-4">
+          <h4 class="mb-3 fs-2 text-secondary fw-bold text-center text-lg-start">
+            Experience
+          </h4>
+        </div>
+        <div class="col-12 col-lg-8">{% include dark/experience.html %}</div>
+      </div>
     </div>
-    <div class="col-12 col-lg-8">{% include projects.html %}</div>
-  </div>
-  <div class="row mb-5 g-5 pt-5" id="experience">
-    <div class="col-12 col-lg-4">
-      <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
-        Experience
-      </h4>
-    </div>
-    <div class="col-12 col-lg-8">{% include experience.html %}</div>
+    {% include dark/footer.html %}
   </div>
 </div>

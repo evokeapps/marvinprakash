@@ -1,0 +1,17 @@
+<div class="row">
+  {% for item in site.data.contact %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="p-3 text-info">
+      <i class="{{item.icon}} me-2"></i>
+      <span class="text-secondary">{{item.title}}</span>
+
+      <div class="fs-5 text-white">
+        {% if item.link %}
+        <a href="{{item.link}}" class="text-decoration-underline text-white ff-serif">{{item.description}}</a>
+        {% else %} <span class="ff-serif text-white">{{item.description}}</span> {% endif
+        %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,11 @@
+{% for item in site.data.skills %}
+<div class="p-3 border text-white shadow shadow-sm rounded mb-3 d-flex flex-row">
+  <div class="fs-3 me-4">
+    <i class="{{item.icon | default: 'fas fa-laptop-code'}} text-info w-50"></i>
+  </div>
+  <div>
+    <div class="fw-bold fs-4">{{item.title}}</div>
+    <div class="fs-5 ff-serif text-secondary">{{item.description}}</div>
+  </div>
+</div>
+{% endfor %}
