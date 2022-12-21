@@ -10,15 +10,11 @@ layout: default
       <div class="text-center">
         {% assign image = site.data.biography.image | relative_url %}
         <div class="mb-3">
-          <img
-            src="{{image}}"
-            class="img-fluid shadow"
-            style="
+          <img src="{{image}}" class="img-fluid shadow" style="
               aspect-ratio: auto 128/128;
               border-radius: 50%;
               max-width: 50%;
-            "
-          />
+            " />
         </div>
         <div class="fs-3">{{site.title}}</div>
         <div class="fs-6 fw-bold text-secondary">{{site.description}}</div>
@@ -39,7 +35,7 @@ layout: default
 </div>
 <div class="mb-5"></div>
 <div class="container">
-  <div class="row mb-5 g-5" id="education">
+  <div class="row mb-5 g-5 pt-5" id="education">
     <div class="col-12 col-lg-4">
       <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
         Education
@@ -47,7 +43,7 @@ layout: default
     </div>
     <div class="col-12 col-lg-8">{% include education.html %}</div>
   </div>
-  <div class="row mb-5 g-5" id="skills">
+  <div class="row mb-5 g-5 pt-5" id="skills">
     <div class="col-12 col-lg-4">
       <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
         Skills
@@ -55,7 +51,7 @@ layout: default
     </div>
     <div class="col-12 col-lg-8">{% include skills.html %}</div>
   </div>
-  <div class="row mb-5 g-5" id="projects">
+  <div class="row mb-5 g-5 pt-5" id="projects">
     <div class="col-12 col-lg-4">
       <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
         Projects
@@ -63,7 +59,7 @@ layout: default
     </div>
     <div class="col-12 col-lg-8">{% include projects.html %}</div>
   </div>
-  <div class="row mb-5 g-5" id="experience">
+  <div class="row mb-5 g-5 pt-5" id="experience">
     <div class="col-12 col-lg-4">
       <h4 class="mb-3 fs-2 text-primary fw-bold text-center text-lg-start">
         Experience
